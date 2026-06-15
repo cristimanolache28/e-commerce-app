@@ -1,0 +1,53 @@
+[1mdiff --git a/.idea/misc.xml b/.idea/misc.xml[m
+[1mindex 639900d..2c1e034 100644[m
+[1m--- a/.idea/misc.xml[m
+[1m+++ b/.idea/misc.xml[m
+[36m@@ -1,6 +1,15 @@[m
+ <?xml version="1.0" encoding="UTF-8"?>[m
+ <project version="4">[m
+[31m-  <component name="ProjectRootManager">[m
+[32m+[m[32m  <component name="ExternalStorageConfigurationManager" enabled="true" />[m
+[32m+[m[32m  <component name="MavenProjectsManager">[m
+[32m+[m[32m    <option name="originalFiles">[m
+[32m+[m[32m      <list>[m
+[32m+[m[32m        <option value="$PROJECT_DIR$/services/config-server/pom.xml" />[m
+[32m+[m[32m        <option value="$PROJECT_DIR$/services/discovery/pom.xml" />[m
+[32m+[m[32m      </list>[m
+[32m+[m[32m    </option>[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m  <component name="ProjectRootManager" version="2" languageLevel="JDK_22" default="true" project-jdk-name="corretto-22" project-jdk-type="JavaSDK">[m
+     <output url="file://$PROJECT_DIR$/out" />[m
+   </component>[m
+ </project>[m
+\ No newline at end of file[m
+[1mdiff --git a/.idea/modules.xml b/.idea/modules.xml[m
+[1mindex 643ded2..5649ba2 100644[m
+[1m--- a/.idea/modules.xml[m
+[1m+++ b/.idea/modules.xml[m
+[36m@@ -2,7 +2,7 @@[m
+ <project version="4">[m
+   <component name="ProjectModuleManager">[m
+     <modules>[m
+[31m-      <module fileurl="file://$PROJECT_DIR$/e-commerce-app-test-v1.iml" filepath="$PROJECT_DIR$/e-commerce-app-test-v1.iml" />[m
+[32m+[m[32m      <module fileurl="file://$PROJECT_DIR$/e-commerce-app.iml" filepath="$PROJECT_DIR$/e-commerce-app.iml" />[m
+     </modules>[m
+   </component>[m
+ </project>[m
+\ No newline at end of file[m
+[1mdiff --git a/services/config-server/src/main/java/com/l2c/comfig_server/ConfigServerApplication.java b/services/config-server/src/main/java/com/l2c/comfig_server/ConfigServerApplication.java[m
+[1mindex 2837172..9523767 100644[m
+[1m--- a/services/config-server/src/main/java/com/l2c/comfig_server/ConfigServerApplication.java[m
+[1m+++ b/services/config-server/src/main/java/com/l2c/comfig_server/ConfigServerApplication.java[m
+[36m@@ -6,10 +6,10 @@[m [mimport org.springframework.cloud.config.server.EnableConfigServer;[m
+ [m
+ @SpringBootApplication[m
+ @EnableConfigServer[m
+[31m-public class ComfigServerApplication {[m
+[32m+[m[32mpublic class ConfigServerApplication {[m
+ [m
+ 	public static void main(String[] args) {[m
+[31m-		SpringApplication.run(ComfigServerApplication.class, args);[m
+[32m+[m		[32mSpringApplication.run(ConfigServerApplication.class, args);[m
+ 	}[m
+ [m
+ }[m
