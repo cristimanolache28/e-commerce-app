@@ -1,4 +1,4 @@
-package com.l2c.customer;
+package com.l2c;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
